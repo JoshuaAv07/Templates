@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="body">
+    <h1 class="title">Alta de Productos en el Inventario</h1>
+    <form class="form-container" action="" method="">
+        <div class="form-header">
+            <p class="inventory-label">Clave</p>
+            <input type="text" class="form" id="" placeholder="">
+            <p class="inventory-label">Descripción</p>
+            <input type="text" class="form" id="" placeholder="">
+        </div>
+        <p class="inventory-title">Datos generales</p>
+        <div class="flex-container">
+            <div class="div-flex">
+                <p class="inventory-label">Tipo</p>
+                <select class="form" name="select" id="">
+                    <option value="default"  selected disabled>Seleccione una opción</option>
+                    <option>Producto</option>
+                    <option>Servicio</option>
+                    <option>Kit</option>
+                </select>
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Linea</p>
+                <input type="text" class="form" placeholder="">
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Marca</p>
+                <input type="text" class="form" placeholder="">
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Tiempo de surtido</p>
+                <input type="text" class="form" placeholder="0">
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Volumen</p>
+                <input type="text" class="form" placeholder="0.00">
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Peso</p>
+                <input type="text" class="form" placeholder="0.00">
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Unidad de entrada</p>
+                <input type="text" class="form" placeholder="Item" value="pz">
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Unidad de salida</p>
+                <input type="text" class="form" placeholder="Item" value="pz">
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Factor entre unidades</p>
+                <input type="text" class="form" placeholder="1.000000">
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Unidad de empaque</p>
+                <input type="text" class="form" placeholder="1.00">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <p class="inventory-title">Precios y control</p>
+        <p class="inventory-sub-title">Precios</p>
+        <div class="flex-container">
+            <div class="div-flex">
+                <p class="inventory-label">Publico</p>
+                <input type="text" class="form" placeholder="0.00">
+            </div>
+        </div>
+        <div class="sub-divider"></div>
+        <p class="inventory-sub-title">Cantidades</p>
+        <div class="flex-container">
+            <div class="div-flex">
+                <p class="inventory-label">Existencia</p>
+                <input type="text" class="form" placeholder="0">
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Stock min.</p>
+                <input type="text" class="form" placeholder="0">
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Stock max.</p>
+                <input type="text" class="form" placeholder="0">
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Apartado</p>
+                <input type="text" class="form" placeholder="0">
+            </div>
+            <div class="div-flex">    
+                <p class="inventory-label">Impuestos (IVA)</p>
+                <input type="text" class="form" value="16%" disabled>
+            </div>
+            <div class="div-flex">    
+                <p class="inventory-label">Costeo</p>
+                <select class="form" name="select" id="">
+                    <option value="default" selected disabled>Seleccione una opción</option>
+                    <option>Promedio</option>
+                    <option>Estándar</option>
+                </select>
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Proveedor 1</p>
+                <input type="text" class="form" placeholder="">
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Proveedor 2</p>
+                <input type="text" class="form" placeholder="">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <p class="inventory-title">Registro y acumulados</p>
+        <p class="inventory-sub-title">Cantidades pendientes...</p>
+        <div class="flex-container">
+            <div class="div-flex">
+                <p class="inventory-label">Penidentes por recibir</p>
+                <input type="text" class="form" placeholder="0">
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Penidentes por surtir</p>
+                <input type="text" class="form" placeholder="0">
+            </div>
+        </div>
+        <div class="sub-divider"></div>
+        <p class="inventory-sub-title">Costos</p>
+        <div class="flex-container">
+            <div class="div-flex">
+                <p class="inventory-label">Promedio</p>
+                <input type="text" class="form" placeholder="0.00">
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Último</p>
+                <input type="text" class="form" placeholder="0.00">
+            </div>
+        </div>
+        <div class="sub-divider"></div>
+        <p class="inventory-sub-title">Acumulados anuales ventas</p>
+        <div class="flex-container">
+            <div class="div-flex">
+                <p class="inventory-label">Cantidad</p>
+                <input type="text" class="form" placeholder="0">
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Monto</p>
+                <input type="text" class="form" placeholder="0.00">
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Fecha última venta</p>
+                <input type="date" class="form" placeholder="Item">
+            </div>
+        </div>
+        <div class="sub-divider"></div>
+        <p class="inventory-sub-title">Acumulados anuales compras</p>
+        <div class="flex-container">
+            <div class="div-flex">
+                <p class="inventory-label">Cantidad</p>
+                <input type="text" class="form" placeholder="0">
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Monto</p>
+                <input type="text" class="form" placeholder="0.00">
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Fecha última compra</p>
+                <input type="date" class="form" placeholder="">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <p class="inventory-title">Datos Adicionales</p>
+        <div class="flex-container">
+            <div class="div-flex">
+                <p class="inventory-label">Color</p>
+                <input type="text" class="form" placeholder="">
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Forma</p>
+                <select class="form" name="select" >
+                    <option value="default" selected disabled>Seleccione una opción</option>
+                    <option>Redondo</option>
+                    <option>Cuadrado</option>
+                    <option>Rectangular</option>
+                    <option>Mariposa</option>
+                    <option>Almohada</option>
+                </select>
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Material</p>
+                <select class="form" name="select" >
+                    <option value="default" selected disabled>Seleccione una opción</option>
+                    <option>Acero inoxidable</option>
+                    <option>Titanium</option>
+                    <option>Monel</option>
+                    <option>Acetato</option>
+                    <option>Plástico</option>
+                    <option>Otro...</option>
+                </select>
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Costo</p>
+                <input type="text" class="form" placeholder="0.00">
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Categoría</p>
+                <select class="form" name="select" >
+                    <option value="default" selected disabled>Seleccione una opción</option>
+                    <option>Económico</option>
+                    <option>Medio</option>
+                    <option>Alto</option>>
+                </select>
+            </div>
+            <div class="div-flex">
+                <p class="inventory-label">Segmento</p>
+                <select class="form" name="select">
+                    <option value="default" disabled selected>Seleccione una opción</option>
+                    <optgroup label="Mujeres">
+                        <option>M +40</option>
+                        <option>M 30-39</option>
+                        <option>M 18-29</option>
+                        <option>M 12-18</option>
+                        <option>M 6-11</option>
+                    </optgroup>
+                    <optgroup label="Hombres">
+                        <option>H +40</option>
+                        <option>H 30-39</option>
+                        <option>H 18-29</option>
+                        <option>H 12-18</option>
+                        <option>H 6-11</option>
+                    </optgroup>
+                </select>
+            </div>
+        </div>
+            <!-- <p class="inventory-label"></p>
+                <p class="inventory-sub-title"></p>
+            <input type="text" class="form" placeholder="Item"> -->
+        </div>
+        <br>
+        <div class="submit">
+            <input class="btn-sub" type="submit" value="Aceptar">
+        </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
